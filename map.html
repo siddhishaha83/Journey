@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5669ae6d0028ba212a60d0ba6eb63913 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5669ae6d0028ba212a60d0ba6eb63913" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5669ae6d0028ba212a60d0ba6eb63913 = L.map(
+                "map_5669ae6d0028ba212a60d0ba6eb63913",
+                {
+                    center: [35.0, 45.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 3,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1520fd146a3b60fe6144587fe9599bfe = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1520fd146a3b60fe6144587fe9599bfe.addTo(map_5669ae6d0028ba212a60d0ba6eb63913);
+        
+    
+            var marker_4de62be4f8fc3697d3ff557751efda02 = L.marker(
+                [17.6805, 74.0183],
+                {
+}
+            ).addTo(map_5669ae6d0028ba212a60d0ba6eb63913);
+        
+    
+        var popup_2b42afcdf53935c0ba09591d777acc44 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0652dc1ad5d6fcaad921a71848eefbc0 = $(`<div id="html_0652dc1ad5d6fcaad921a71848eefbc0" style="width: 100.0%; height: 100.0%;">Where I grew up</div>`)[0];
+                popup_2b42afcdf53935c0ba09591d777acc44.setContent(html_0652dc1ad5d6fcaad921a71848eefbc0);
+            
+        
+
+        marker_4de62be4f8fc3697d3ff557751efda02.bindPopup(popup_2b42afcdf53935c0ba09591d777acc44)
+        ;
+
+        
+    
+    
+            marker_4de62be4f8fc3697d3ff557751efda02.bindTooltip(
+                `<div>
+                     Satara, India
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b6ebc55bab07c9bf3733be823cba41f2 = L.marker(
+                [52.52, 13.405],
+                {
+}
+            ).addTo(map_5669ae6d0028ba212a60d0ba6eb63913);
+        
+    
+        var popup_73b823ba41cd36a03f08295d5032fb96 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79f233f910f27791d741e3bd7f2272b5 = $(`<div id="html_79f233f910f27791d741e3bd7f2272b5" style="width: 100.0%; height: 100.0%;">HWR Berlin: my Master's</div>`)[0];
+                popup_73b823ba41cd36a03f08295d5032fb96.setContent(html_79f233f910f27791d741e3bd7f2272b5);
+            
+        
+
+        marker_b6ebc55bab07c9bf3733be823cba41f2.bindPopup(popup_73b823ba41cd36a03f08295d5032fb96)
+        ;
+
+        
+    
+    
+            marker_b6ebc55bab07c9bf3733be823cba41f2.bindTooltip(
+                `<div>
+                     Berlin, Germany
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_7a2ae8a5d6cebdc7eb54bf8d302fa6cd = L.polyline(
+                [[17.6805, 74.0183], [52.52, 13.405]],
+                {"bubblingMouseEvents": true, "color": "#1d1b19", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1d1b19", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_5669ae6d0028ba212a60d0ba6eb63913);
+        
+</script>
+</html>
